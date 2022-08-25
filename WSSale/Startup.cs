@@ -32,7 +32,9 @@ namespace WSSale
                 options.AddPolicy(name: MyCors,
                     builder =>
                     {
+                        builder.WithHeaders("*");
                         builder.WithOrigins("*");
+                        builder.WithMethods("*");
                     });
             });
 

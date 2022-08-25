@@ -21,7 +21,7 @@ namespace WSSale.Controllers
             {
                 using (ActualSaleContext db = new ActualSaleContext())
                 {
-                    var lst = db.Customers.ToList();
+                    var lst = db.Customers.OrderByDescending(d => d.IdCustomer).ToList();
                     mResponse.Success = 1;
                     mResponse.Data = lst;
                 }
