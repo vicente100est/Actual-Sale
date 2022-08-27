@@ -6,11 +6,13 @@ using System.Linq;
 using WSSale.Models;
 using WSSale.Models.Response;
 using WSSale.Models.Request;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WSSale.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CustomerController : ControllerBase
     {
         [HttpGet]

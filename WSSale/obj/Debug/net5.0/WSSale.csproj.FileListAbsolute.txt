@@ -40,7 +40,6 @@ C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -58,3 +57,5 @@ C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\vicen\Desktop\lab\sistema de ventas\back\WSSale\WSSale\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll

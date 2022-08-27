@@ -21,13 +21,14 @@ namespace WSSale.Models
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Sale> Sales { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=localhost;DataBase=ActualSale;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=ActualSale; Trusted_Connection=True;");
             }
         }
 
@@ -131,6 +132,29 @@ namespace WSSale.Models
                     .HasForeignKey(d => d.IdCustomer)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Sale_Customers");
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.IdUser);
+
+                entity.ToTable("User");
+
+                entity.Property(e => e.EmailUser)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.NameUser)
+                    .IsRequired()
+                    .HasMaxLength(49)
+                    .IsUnicode(false)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.PasswordUser)
+                    .IsRequired()
+                    .HasMaxLength(256)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);
